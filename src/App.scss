@@ -500,8 +500,11 @@
     padding: 4rem 2rem;
     .social-handles {
       a {
-        width: 60px;
-        height: 45px;
+        width: 45px;
+        height: 35px;
+        .social-icon {
+          font-size: 1.5rem;
+        }
       }
     }
   }
