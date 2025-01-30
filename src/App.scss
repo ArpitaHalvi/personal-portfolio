@@ -23,7 +23,7 @@
       padding: 0.5rem;
       position: relative;
       a {
-        color: #dce9ff;
+        color: #f6f9ff;
         cursor: pointer;
       }
       &::after {
@@ -87,6 +87,7 @@
     gap: 0.7rem;
     animation: animate-div 1s linear;
     h1 {
+      text-align: center;
       font-size: 5rem;
       animation: animate-div 1s linear;
     }
@@ -148,9 +149,20 @@
   }
   @media (width<=550px) {
     justify-content: flex-start;
-    margin-left: 5%;
+    margin-left: 3%;
     div {
       width: 90%;
+    }
+  }
+  @media (width<=480px) {
+    div {
+      width: 85%;
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -187,15 +199,11 @@
 // --------------- ABOUT SECTION STYLES ---------------
 .about-section {
   width: 100%;
-  // height: 90vh;
   color: whitesmoke;
   padding: 2rem;
   @include index.flex-box;
   .about-me {
     width: 90%;
-    border: 1px solid #6a11cb;
-    // border: 1px solid #2575fc;
-    // box-shadow: 10px 10px;
     padding: 2rem;
     border-radius: 5px;
     @include index.flex-box($flex-dir: column);
@@ -299,6 +307,13 @@
             }
           }
         }
+      }
+    }
+  }
+  @media (width<=480px) {
+    .about-me {
+      p {
+        font-size: 1.2rem;
       }
     }
   }
@@ -419,6 +434,19 @@
     }
     // }
   }
+  @media (width<=480px) {
+    padding: 1rem;
+    .projects {
+      .card {
+        width: 100%;
+        div {
+          .link {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 // ----------- FOOTER SECTION STYLES ---------------
@@ -465,6 +493,15 @@
           width: 70px;
           height: 50px;
         }
+      }
+    }
+  }
+  @media (width<=480px) {
+    padding: 4rem 2rem;
+    .social-handles {
+      a {
+        width: 60px;
+        height: 45px;
       }
     }
   }
