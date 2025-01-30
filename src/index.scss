@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+  // font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  // "Lucida Sans", Arial, sans-serif;
+}
+
+html {
+  background-color: black;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@mixin flex-box(
+  $justify-content: center,
+  $align-items: center,
+  $flex-dir: row
+) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-dir;
+}
+
+@mixin res-grid($width: 50%) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($width, 1fr));
+  place-items: center;
+}
