@@ -1,8 +1,11 @@
 export default function Contact() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <section className="contact-page" id="contact">
       <h2>Connect with me</h2>
-      <form>
+      <form onSubmit={handleSubmit}>
         <input type="text" placeholder="Your fullname" />
         <input type="text" placeholder="Your email" />
         <textarea
