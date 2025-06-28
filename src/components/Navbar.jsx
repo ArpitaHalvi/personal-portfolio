@@ -1,6 +1,6 @@
 import { CgClose } from "react-icons/cg";
 import { CiMenuFries } from "react-icons/ci";
-import { FaLaptopCode } from "react-icons/fa";
+// import { FaLaptopCode } from "react-icons/fa";
 import { useState } from "react";
 
 const links = [
@@ -15,7 +15,11 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <FaLaptopCode className="logo-icon" />
+        {/* <FaLaptopCode className="logo-icon" /> */}
+        <h2>
+          <span className="f-name">Arpita</span>
+          <span className="l-name">Halvi</span>
+        </h2>
       </div>
       <ul className={`links-container ${isOpen ? "open" : ""}`}>
         {links.map((link, index) => {
